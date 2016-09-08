@@ -15,6 +15,9 @@ gem 'rake'
 gem 'shotgun'
 gem 'httparty'
 
+#yelp API
+gem 'yelp', require: 'yelp'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
