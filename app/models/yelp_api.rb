@@ -1,0 +1,2 @@
+class YelpApi
+end
