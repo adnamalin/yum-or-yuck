@@ -62,3 +62,11 @@ i.right {
 .search-results {
   width: 100%;
 }
+
+.first-sans {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.crete-round {
+  font-family: 'Crete Round', serif;
+}
