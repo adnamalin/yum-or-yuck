@@ -9,7 +9,7 @@ $(document).ready(function() {
     $.get( "/searches", data )
       .done(function( response ) {
         $("#search-status").text("Results:")
-        $("#search-list").append(response).show('slow');
+        $("#search-list").html(response).show('slow');
       });
     });
 });
