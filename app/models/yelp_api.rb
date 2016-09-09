@@ -18,7 +18,7 @@ class YelpApi
   end
 
   def select_business(biz_id)
-    @client.business('en-hakkore-chicago-2').business
+    @client.business(biz_id).business
   end
 
 end
