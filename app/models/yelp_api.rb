@@ -14,10 +14,6 @@ class YelpApi
 
   def search_restaurants(term)
     results = @client.search('Chicago', {term: term})
-    p results
   end
 
 end
-
-yelp = YelpApi.new
-yelp.search_restaurants('korean')
