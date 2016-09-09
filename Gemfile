@@ -15,6 +15,7 @@ gem 'rake'
 gem 'shotgun'
 gem 'httparty'
 gem 'dotenv'
+gem 'rails_12factor'
 
 #yelp API
 gem 'yelp', require: 'yelp'
