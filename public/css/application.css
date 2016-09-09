@@ -1,0 +1,20 @@
+body {
+  background-image: url('../images/cubes.png');
+  background-repeat: repeat;
+}
+
+.biz-header {
+  display: flex;
+  justify-content: space-around;;
+  align-items: center;
+}
+
+.biz-details {
+  display: flex;
+  justify-content: center;
+}
+
+.yelp-link {
+  display: flex;
+  justify-content: center;
+}

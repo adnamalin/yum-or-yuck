@@ -6,5 +6,9 @@ get '/searches' do
   yelp = YelpApi.new
   term = params[:search_term]
   @results = yelp.search_restaurants(term)
-  erb :'searches/show'
+  if request.xhr?
+    erb :'searches/show', layout: false, locals: {results: @results}
+  else
+    erb :'searches/show'
+  end
 end

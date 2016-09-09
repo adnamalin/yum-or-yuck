@@ -12,7 +12,6 @@ class ChiApi
     biz_address = format_address(address)
     #find resturants match address (if address result in nother, try finding by name & zipcode), sort by latest inspection and return that report
     response = HTTParty.get("#{@base_uri}address=#{biz_address}&city=CHICAGO&$$app_token=#{ENV['CHI_TOKEN']}&$order=inspection_date DESC").parsed_response[0] ||=  HTTParty.get("#{@base_uri}aka_name=#{name.upcase}&zip=#{zipcode}&$$app_token=#{ENV['CHI_TOKEN']}&$order=inspection_date DESC").parsed_response[0]
-    p response
   end
 
   def format_address(original_address)
