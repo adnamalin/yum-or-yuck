@@ -23,3 +23,42 @@ body {
   height: 70%;
   width: 70%;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/* SEARCH BAR*/
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn {
+  margin-top: 5px;
+  margin-left: 15px;
+  padding: 0px !important;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-field {
+  width: 400px !important;
+}
+
+i.right {
+  margin: 0px 10px !important;
+}
+
+#search-list {
+
+}
+
+.search-results {
+  width: 100%;
+}
