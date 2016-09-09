@@ -13,3 +13,8 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.yelp-link {
+  display: flex;
+  justify-content: center;
+}

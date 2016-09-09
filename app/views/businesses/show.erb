@@ -3,7 +3,7 @@
     <div class="card-panel white">
 
       <div class="biz-header">
-        <h2><%= biz.name %></h2>
+        <h2 class="red-text text-darken-2"><%= biz.name %></h2>
         <img class='rating' src="<%= biz.rating_img_url_large %>" alt="average-rating" />
       </div>
 
@@ -11,11 +11,26 @@
         <h5><%= "#{biz.location.address[0]}, #{biz.location.city}" %></h5>
       </div>
 
-      <div class="inspection-results">
-        <h5>Latest Inspection Results</h5>
-        <%= erb :'businesses/_inspection_results', locals: {inspection_report: inspection_report} %>
+      <div class="yelp-link">
+        <a href="<%= biz.url %>">Go To Yelp Page</a>
       </div>
 
+      <div class="sample-review">
+        <span><strong>Sample Review:</strong></span>
+        <p><em>
+          <%= biz.reviews[0].excerpt %><br />
+          <%= biz.reviews[0].user["name"] %>
+        </em></p>
+      </div>
+
+      <% if inspection_report != nil %>
+        <div class="inspection-results">
+          <h5>Latest Inspection Results</h5>
+          <%= erb :'businesses/_inspection_results', locals: {inspection_report: inspection_report} %>
+        </div>
+      <% else %>
+        <h5>No Inspection Results to Show</h5>
+      <% end %>
     </div>
   </div>
 </div>
