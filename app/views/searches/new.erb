@@ -1,9 +1,14 @@
-<h4>Search for a restuarant or by keywords</h4>
+<h5>Search for a restuarant or by keywords</h5>
 
-<form id="search-form" action="/searches" method="get">
-  <input type="text" name="search_term" value="">
-  <input type="submit" value="go!">
-</form>
-<span id="search-status"></span>
+<div class="row">
+  <div class="col s6">
+    <form id="search-form" action="/searches" method="get">
+      <input type="text" name="search_term" value="">
+      <input type="submit" value="go!">
+    </form>
+    <h5 id="search-status"></h5>
+  </div>
+</div>
+
 <div id="search-list" style="display:none;">
 </div>
