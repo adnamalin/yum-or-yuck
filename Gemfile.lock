@@ -109,6 +109,7 @@ DEPENDENCIES
   factory_girl
   faker
   httparty
+  i18n
   pg
   rack-test
   rails_12factor
