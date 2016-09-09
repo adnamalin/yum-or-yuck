@@ -23,9 +23,10 @@ Search from Chicago Yelp listings to see not only a restaurants details, ratings
 * Handling input errors with Yelp API (characters)
 
 ##Next Steps
-* Chrome Extension that makes Chicago City API calls and scrapes the Yelp listing you are own so you don't need to go to seperate app
+* Refactor current code and clean up views
 * Allow users to vote on listings if they are 'worth the risk'
 * Pull more info from Yelp, for example display 3 recent reviews instead of 1 snippet
 * Parse violation descriptions into more readable text
 * Improve styling 
 * Look into nationwide database for health inspections? 
+* Chrome Extension that makes Chicago City API calls and scrapes the Yelp listing you are own so you don't need to go to seperate app
