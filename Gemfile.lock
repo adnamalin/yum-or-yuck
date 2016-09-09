@@ -52,6 +52,11 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     rake (10.4.2)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
@@ -106,6 +111,7 @@ DEPENDENCIES
   httparty
   pg
   rack-test
+  rails_12factor
   rake
   rspec (~> 3.0)
   shotgun
