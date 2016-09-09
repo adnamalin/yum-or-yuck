@@ -9,6 +9,6 @@ get '/searches' do
   if request.xhr?
     erb :'searches/show', layout: false, locals: {results: @results}
   else
-    erb :'searches/show'
+    erb :'searches/show', locals: {results: @results}
   end
 end
