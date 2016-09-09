@@ -1,4 +1,5 @@
 require 'yelp'
+require "i18n"
 require 'dotenv'
 Dotenv.load
 
@@ -18,7 +19,8 @@ class YelpApi
   end
 
   def select_business(biz_id)
-    @client.business(biz_id).business
+    biz_id_cleaned = I18n.transliterate(biz_id)
+    @client.business(biz_id_cleaned).business
   end
 
 end

@@ -5,9 +5,13 @@
   <li><strong>Inspection Type:</strong> <%= inspection_report["inspection_type"] %></li>
 </ul>
 
-<ul class="collection with-header">
-   <li class="collection-header"><h5>Violations</h5></li>
-   <% inspection_report["violations"].split("|").each do |violation| %>
-     <li class="collection-item"><%= violation %></li>
-   <% end %>
-</ul>
+<% if inspection_report["violations"] != nil %>
+  <ul class="collection with-header">
+     <li class="collection-header"><h5>Violations</h5></li>
+     <% inspection_report["violations"].split("|").each do |violation| %>
+       <li class="collection-item"><%= violation %></li>
+     <% end %>
+  </ul>
+<% else %>
+  <h5>No Violations!</h5>
+<% end %>
