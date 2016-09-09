@@ -1,7 +1,5 @@
-<h1>Show Searches</h1>
-
-<ul>
-  <%  @results.each do |biz| %>
-  <li><a href="/business/<%= biz.id %>"><%= biz.name %></a></li>
-  <% end %>
-</ul>
+  <ul>
+    <%  @results.each do |biz| %>
+    <li><a href="/business/<%= biz.id %>"><%= biz.name %></a></li>
+    <% end %>
+  </ul>

@@ -1,6 +1,9 @@
-<h1>Yum Or Yuck</h1>
+<h4>Search for a restuarant or by keywords</h4>
 
-<form action="/searches" method="get">
+<form id="search-form" action="/searches" method="get">
   <input type="text" name="search_term" value="">
   <input type="submit" value="go!">
 </form>
+<span id="search-status"></span>
+<div id="search-list" style="display:none;">
+</div>
