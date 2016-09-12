@@ -1,6 +1,8 @@
 ![logo](http://i.imgur.com/0WAFsJQ.png)
 
-Search from Chicago Yelp listings to see not only a restaurants details, ratings, etc but also their latest health inspection report! Find out any dirt about your next meal, literally.
+Search from Chicago Yelp listings to see a restaurants details, ratings, etc and their latest health inspection report! 
+
+Find out any dirt about your next meal, literally.
 
 ---
 ##Visit Live Site
