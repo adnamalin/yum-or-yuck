@@ -8,6 +8,21 @@ Find out any dirt about your next meal, literally.
 ##Visit Live Site
 [https://yumoryuck.herokuapp.com/](https://yumoryuck.herokuapp.com/)
 
+###Run locally: 
+Clone down the repot and create .env file with the following API keys from [Yelp API](https://www.yelp.com/developers/documentation/v2/overview) and [Chicago City API](https://dev.socrata.com/foundry/data.cityofchicago.org/cwig-ma7x):
+
+```
+YELP_CONSUMER_KEY=<YOUR YELP_CONSUMER_KEY>
+YELP_CONSUMER_SECRET=<YOUR YELP_CONSUMER_SECRET>
+YELP_TOKEN=<YOUR YELP_TOKEN>
+YELP_TOKEN_SECRET=<YOUR YELP_TOKEN_SECRET>
+CHI_TOKEN=<YOUR CHI_TOKEN>
+CHI_TOKEN_SECRET=<YOUR CHI_TOKEN_SECRET>
+
+```
+
+Place the .env in your .gitignore. Run `dotenv bundle exec shotgun` and visit http://localhost:9393!
+
 ##Tech 
 [Yelp API](https://www.yelp.com/developers/documentation/v2/overview) cross references the [Chicago City API](https://dev.socrata.com/foundry/data.cityofchicago.org/cwig-ma7x) to display health inspection information along with Yelp rating and sample review. 
 
