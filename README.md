@@ -9,7 +9,7 @@ Find out any dirt about your next meal, literally.
 [https://yumoryuck.herokuapp.com/](https://yumoryuck.herokuapp.com/)
 
 ###Run locally: 
-Clone down the repot and create .env file with the following API keys from [Yelp API](https://www.yelp.com/developers/documentation/v2/overview) and [Chicago City API](https://dev.socrata.com/foundry/data.cityofchicago.org/cwig-ma7x):
+Clone down the repo and create a .env file in the root directory with the following API keys from [Yelp API](https://www.yelp.com/developers/documentation/v2/overview) and [Chicago City API](https://dev.socrata.com/foundry/data.cityofchicago.org/cwig-ma7x):
 
 ```
 YELP_CONSUMER_KEY=<YOUR YELP_CONSUMER_KEY>
