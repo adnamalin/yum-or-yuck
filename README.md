@@ -17,9 +17,9 @@ Search from Chicago Yelp listings to see not only a restaurants details, ratings
 * Heroku
 
 ##Challenges
-* Yelp API - Oauth require for any call. Creating an OAuth nonce and timestamp was okay, Oauth Signature..not so much.
-* Chicago City API is very particular about your parameters
-* Deciding what parameters to use in the cross referencing search to cut down on a erroneous no match. Main parameter was address, and then name + zipcode if address failed. 
+* Yelp API - Oauth require for any call. Initiallty started off trying to build the API call from scratch since I was only making two fairly simple get request. Pivoted after spiking into creating oauth signatures and for the sake of time used the yelp-ruby gem instead. 
+* Chicago City API is very particular about your parameters when you query for matches. 
+* Deciding what parameters to use in the cross referencing search to cut down on no matches. First parameter was address, and then name + zipcode if address failed. 
 * Handling input errors with Yelp API (characters)
 
 ##Next Steps
@@ -28,5 +28,5 @@ Search from Chicago Yelp listings to see not only a restaurants details, ratings
 * Pull more info from Yelp, for example display 3 recent reviews instead of 1 snippet
 * Parse violation descriptions into more readable text
 * Improve styling 
-* Look into nationwide database for health inspections? 
+* Look into nationwide database for health inspections
 * Chrome Extension that makes Chicago City API calls and scrapes the Yelp listing you are own so you don't need to go to seperate app
