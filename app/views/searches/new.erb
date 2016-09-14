@@ -1,14 +1,14 @@
-<h5>Search for a restuarant or by keywords</h5>
+<h5 class="center crete-round">Search for a restuarant or by keywords</h5>
 
-<div class="row">
-  <div class="col s6">
-    <form id="search-form" action="/searches" method="get">
-      <input type="text" name="search_term" value="">
-      <input type="submit" value="go!">
-    </form>
-    <h5 id="search-status"></h5>
-  </div>
+<div class="center">
+  <form id="search-form" class="center" action="/searches" method="get">
+    <input type="text" class="search-field" name="search_term" value="">
+    <button class="btn-flat red darken-2 waves-effect waves-light search-btn white-text" type="submit" name="action">
+      <i class="material-icons right">search</i>
+    </button>
+  </form>
 </div>
 
-<div id="search-list" style="display:none;">
-</div>
+<p id="search-status" class="fire-sans center"></p>
+
+<div id="search-list" class="center" style="display:none;">

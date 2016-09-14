@@ -1,0 +1,11 @@
+<ul class="collection search-results">
+   <%  results.each do |biz| %>
+   <li class="collection-item avatar">
+     <img src="<%= biz.snippet_image_url %>" alt="" class="circle">
+     <span class="title"><a href="/business/<%= biz.id %>"><%= biz.name %></a></span>
+     <p> <%= "#{biz.location.address[0]}, #{biz.location.city}" %><br>
+        <img src="<%= biz.rating_img_url_small %>" alt="average-rating" />
+     </p>
+   </li>
+   <% end %>
+ </ul>
