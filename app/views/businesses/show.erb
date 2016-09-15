@@ -4,7 +4,10 @@
 
       <div class="biz-header">
         <h2 class="crete-round red-text text-darken-2"><%= biz.name %></h2>
-        <img class='rating' src="<%= biz.rating_img_url_large %>" alt="average-rating" />
+        <div class="rating">
+          <img class='rating' src="<%= biz.rating_img_url_large %>" alt="average-rating" />
+          <br /><span><%= biz.review_count %> Reviews</span>
+        </div>
       </div>
 
       <div class="biz-details">
@@ -25,12 +28,6 @@
           <p><em>
             <%= biz.reviews[0].excerpt %><br />
             <%= biz.reviews[0].user["name"] %>
-          </em></p>
-        </div>
-        <div class="sample-review">
-          <span><strong>About the Business:</strong></span>
-          <p><em>
-            <%= biz.snippet_text %>
           </em></p>
         </div>
       </div>
