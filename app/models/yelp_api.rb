@@ -24,7 +24,3 @@ class YelpApi
   end
 
 end
-
-# yelp = YelpApi.new
-# results = yelp.search_restaurants("korean")
-# p yelp.select_business('en-hakkore-chicago-2')
